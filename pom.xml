@@ -5,7 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
     <artifactId>positioncalculator</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1</version>
+
+    <name>positioncalculator</name>
+    <description>Fixed percent risk money management calculator</description>
+    <url>https://github.com/androidfred/positioncalculator</url>
+
+    <licenses>
+        <license>
+            <name>Public Domain (Unlicense)</name>
+            <url>http://unlicense.org/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>

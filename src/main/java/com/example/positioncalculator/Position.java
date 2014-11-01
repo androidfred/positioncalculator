@@ -1,8 +1,9 @@
 package com.example.positioncalculator;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Position {
+public class Position implements Serializable {
 
     private BigDecimal capital;
     private BigDecimal tolerableRiskInPercentOfCapitalPerTrade;

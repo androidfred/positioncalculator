@@ -1,4 +1,4 @@
-Fixed percent risk position calculator.
+Fixed percent risk position size calculator.
 
 This is free and unencumbered software released into the public domain.
 

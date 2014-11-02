@@ -1,4 +1,4 @@
-package com.example.positioncalculator;
+package io.github.androidfred.positioncalculator;
 
 import org.junit.Assert;
 import org.junit.Test;

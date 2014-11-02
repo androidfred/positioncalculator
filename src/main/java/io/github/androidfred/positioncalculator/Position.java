@@ -1,4 +1,4 @@
-package com.example.positioncalculator;
+package io.github.androidfred.positioncalculator;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

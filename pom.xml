@@ -4,12 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
+    <groupId>io.github.androidfred</groupId>
     <artifactId>positioncalculator</artifactId>
     <version>0.1</version>
+    <packaging>pom</packaging>
     <name>positioncalculator</name>
-    <description>Fixed percent position size calculator</description>
-    <url>https://github.com/androidfred/positioncalculator</url>
+    <description>Fixed percent risk position size calculator</description>
+    <url>https://androidfred.github.io/positioncalculator</url>
 
     <licenses>
         <license>
@@ -21,8 +22,9 @@
 
     <developers>
         <developer>
-            <name>Fred</name>
-            <organizationUrl>https://github.com/androidfred/positioncalculator</organizationUrl>
+            <name>Fredrik Friis</name>
+            <email>fre.and.fri@gmail.com</email>
+            <url>https://androidfred.github.io</url>
         </developer>
     </developers>
     <scm>

@@ -21,6 +21,7 @@ pom.xml.releaseBackup
 pom.xml.versionsBackup
 pom.xml.next
 release.properties
+settings.xml
 
 ### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm

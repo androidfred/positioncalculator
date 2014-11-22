@@ -1,3 +1,12 @@
+```xml
+<dependency>
+    <groupId>io.github.androidfred</groupId>
+    <artifactId>positioncalculator</artifactId>
+    <version>0.1.1</version>
+    <type>jar</type>
+</dependency>
+```
+
 Fixed percent risk position size calculator.
 
 This is free and unencumbered software released into the public domain.

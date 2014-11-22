@@ -6,7 +6,7 @@
 
     <groupId>io.github.androidfred</groupId>
     <artifactId>positioncalculator</artifactId>
-    <version>0.1</version>
+    <version>0.1.1</version>
     <name>positioncalculator</name>
     <description>Fixed percent risk position size calculator</description>
     <url>https://androidfred.github.io/positioncalculator</url>
@@ -76,6 +76,19 @@
                         <id>attach-sources</id>
                         <goals>
                             <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
                         </goals>
                     </execution>
                 </executions>

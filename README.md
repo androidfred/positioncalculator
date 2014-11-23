@@ -1,5 +1,7 @@
 # Fixed percent risk position size calculator
 
+See also web GUI code at https://github.com/androidfred/positionweb
+
 ```xml
 <dependency>
     <groupId>io.github.androidfred</groupId>

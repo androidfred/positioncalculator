@@ -1,3 +1,5 @@
+# Fixed percent risk position size calculator
+
 ```xml
 <dependency>
     <groupId>io.github.androidfred</groupId>
@@ -6,9 +8,6 @@
     <type>jar</type>
 </dependency>
 ```
-
-Fixed percent risk position size calculator.
-
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or

@@ -9,7 +9,7 @@ See also web GUI code at https://github.com/androidfred/positionweb
 </dependency>
 ```
 
-##Unlicense
+## Unlicense
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or

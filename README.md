@@ -8,6 +8,8 @@ Trading calculator for fixed percent risk position sizing. See also web GUI code
     <type>jar</type>
 </dependency>
 ```
+
+##Unlicense
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or

@@ -1,6 +1,4 @@
-# Fixed percent risk position size calculator
-
-See also web GUI code at https://github.com/androidfred/positionweb
+Trading calculator for fixed percent risk position sizing. See also web GUI code at https://github.com/androidfred/positionweb
 
 ```xml
 <dependency>

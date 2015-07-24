@@ -1,4 +1,6 @@
-See also web GUI code at https://github.com/androidfred/positionweb
+This app has been rewritten in Angular. The Angular rewrite has taken over the URL where this Java app was originally hosted: http://positioncalculator.bedobi.com. The source code for the Angular rewrite can be found at https://github.com/androidfred/angulator.
+
+The web GUI code for this Java app can be found at at https://github.com/androidfred/positionweb
 
 ```xml
 <dependency>

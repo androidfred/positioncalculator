@@ -8,7 +8,7 @@ Both this app and the Java web GUI were replaced by a version written completely
 <dependency>
     <groupId>io.github.androidfred</groupId>
     <artifactId>positioncalculator</artifactId>
-    <version>0.1.1</version>
+    <version>1.0</version>
     <type>jar</type>
 </dependency>
 ```

@@ -1,6 +1,8 @@
-This app has been rewritten in Angular. The Angular rewrite has taken over the URL where this Java app was originally hosted: http://positioncalculator.bedobi.com. The source code for the Angular rewrite can be found at https://github.com/androidfred/angulator.
+Despite this Java app no longer being deployed anywhere, I decided to refactor it as an exercise in Object Orientation
+and keep it here on GitHub as an example of how my software development skills have evolved over time.
 
-The web GUI code for this Java app can be found at https://github.com/androidfred/positionweb
+This app was originally deployed through a Java web GUI. (https://github.com/androidfred/positionweb)
+Both this app and the Java web GUI were replaced by a version written completely in Angular. (https://github.com/androidfred/angulator)
 
 ```xml
 <dependency>

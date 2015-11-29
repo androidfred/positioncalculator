@@ -6,7 +6,7 @@
 
     <groupId>io.github.androidfred</groupId>
     <artifactId>positioncalculator</artifactId>
-    <version>0.1.1</version>
+    <version>1.0</version>
     <name>positioncalculator</name>
     <description>Fixed percent risk position size calculator</description>
     <url>https://androidfred.github.io/positioncalculator</url>

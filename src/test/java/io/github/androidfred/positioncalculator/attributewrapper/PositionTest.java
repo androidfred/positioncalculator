@@ -1,4 +1,4 @@
-package io.github.androidfred.positioncalculator.oo;
+package io.github.androidfred.positioncalculator.attributewrapper;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -6,7 +6,6 @@ import org.junit.Test;
 import java.math.BigDecimal;
 
 public class PositionTest {
-
     @Test(expected = IllegalArgumentException.class)
     public void arguments_null_IAE() throws Exception {
         new Long(null, null, null, null);

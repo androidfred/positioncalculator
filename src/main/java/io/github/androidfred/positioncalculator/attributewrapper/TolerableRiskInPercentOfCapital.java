@@ -1,4 +1,8 @@
-package io.github.androidfred.positioncalculator.oo;
+package io.github.androidfred.positioncalculator.attributewrapper;
+
+import io.github.androidfred.positioncalculator.Below100;
+import io.github.androidfred.positioncalculator.NotNull;
+import io.github.androidfred.positioncalculator.PositiveSignum;
 
 import java.math.BigDecimal;
 

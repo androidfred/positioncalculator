@@ -1,4 +1,4 @@
-package io.github.androidfred.positioncalculator.oo;
+package io.github.androidfred.positioncalculator.attributewrapper;
 
 import java.math.BigDecimal;
 

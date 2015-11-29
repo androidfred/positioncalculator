@@ -1,22 +1,15 @@
-package io.github.androidfred.positioncalculator.oo;
+package io.github.androidfred.positioncalculator.stringwrapper;
+
+import io.github.androidfred.positioncalculator.NotNull;
+import io.github.androidfred.positioncalculator.PositiveSignum;
 
 import java.math.BigDecimal;
 
-public class Capital implements NotNull, PositiveSignum {
-
-    private BigDecimal capital;
-
-    private Capital() {
-    }
-
-    public Capital(final BigDecimal capital) {
-        notNull(capital);
-        positiveSignum(capital);
-        this.capital = capital;
-    }
-
-    public BigDecimal getCapital() {
-        return capital;
+public class Capital extends BigDecimal implements NotNull, PositiveSignum {
+    public Capital(final String val) {
+        super(val);
+        notNull(this);
+        positiveSignum(this);
     }
 
     @Override

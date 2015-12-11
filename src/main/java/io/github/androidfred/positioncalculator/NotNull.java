@@ -1,7 +1,20 @@
 package io.github.androidfred.positioncalculator;
 
-import java.math.BigDecimal;
+public class NotNull<T> {
 
-public interface NotNull {
-    void notNull(final BigDecimal notNull);
+    private T verified;
+
+    private NotNull() {
+    }
+
+    public NotNull(final T verify) {
+        if (verify == null) {
+            throw new IllegalArgumentException("must not be null");
+        }
+        this.verified = verify;
+    }
+
+    public final T provide() {
+        return this.verified;
+    }
 }

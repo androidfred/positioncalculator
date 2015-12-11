@@ -1,4 +1,4 @@
-package io.github.androidfred.positioncalculator.attributewrapper;
+package io.github.androidfred.positioncalculator;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -6,15 +6,16 @@ import org.junit.Test;
 import java.math.BigDecimal;
 
 public class PositionTest {
+
     @Test(expected = IllegalArgumentException.class)
     public void arguments_null_IAE() throws Exception {
-        new Long(null, null, null, null);
+        new io.github.androidfred.positioncalculator.Long(null, null, null, null);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void arguments_0_IAE() throws Exception {
         BigDecimal zero = new BigDecimal(0);
-        new Long(new Capital(zero),
+        new io.github.androidfred.positioncalculator.Long(new Capital(zero),
                 new TolerableRiskInPercentOfCapital(zero),
                 new PricePerUnit(zero),
                 new StopLossPricePerUnit(zero));
@@ -23,7 +24,7 @@ public class PositionTest {
     @Test(expected = IllegalArgumentException.class)
     public void arguments_negative_IAE() throws Exception {
         BigDecimal negative = new BigDecimal(-1);
-        new Long(new Capital(negative),
+        new io.github.androidfred.positioncalculator.Long(new Capital(negative),
                 new TolerableRiskInPercentOfCapital(negative),
                 new PricePerUnit(negative),
                 new StopLossPricePerUnit(negative));
@@ -31,7 +32,7 @@ public class PositionTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void tolerableRiskInPercentOfCapitalPerTrade_100OrOver_IAE() throws Exception {
-        new Long(new Capital(new BigDecimal(10000)),
+        new io.github.androidfred.positioncalculator.Long(new Capital(new BigDecimal(10000)),
                 new TolerableRiskInPercentOfCapital(new BigDecimal(100)),
                 new PricePerUnit(new BigDecimal(25)),
                 new StopLossPricePerUnit(new BigDecimal(24)));
@@ -39,7 +40,7 @@ public class PositionTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void longPricePerUnit_lowerThanStopLoss_IAE() throws Exception {
-        new Long(new Capital(new BigDecimal(10000)),
+        new io.github.androidfred.positioncalculator.Long(new Capital(new BigDecimal(10000)),
                 new TolerableRiskInPercentOfCapital(new BigDecimal(2)),
                 new PricePerUnit(new BigDecimal(25)),
                 new StopLossPricePerUnit(new BigDecimal(26)));
@@ -55,7 +56,7 @@ public class PositionTest {
 
     @Test
     public void long_noDecimals_correct() throws Exception {
-        Position position = new Long(new Capital(new BigDecimal(10000)),
+        Position position = new io.github.androidfred.positioncalculator.Long(new Capital(new BigDecimal(10000)),
                 new TolerableRiskInPercentOfCapital(new BigDecimal(2)),
                 new PricePerUnit(new BigDecimal(25)),
                 new StopLossPricePerUnit(new BigDecimal(24)));
@@ -64,7 +65,7 @@ public class PositionTest {
 
     @Test
     public void long_decimals_correct() throws Exception {
-        Position position = new Long(new Capital(new BigDecimal(9999)),
+        Position position = new io.github.androidfred.positioncalculator.Long(new Capital(new BigDecimal(9999)),
                 new TolerableRiskInPercentOfCapital(new BigDecimal(2)),
                 new PricePerUnit(new BigDecimal(19.5)),
                 new StopLossPricePerUnit(new BigDecimal(17.3)));
@@ -91,7 +92,7 @@ public class PositionTest {
 
     @Test
     public void total_higherThanCapital_noUnitsToBuy() throws Exception {
-        Position position = new Long(new Capital(new BigDecimal(10000)),
+        Position position = new io.github.androidfred.positioncalculator.Long(new Capital(new BigDecimal(10000)),
                 new TolerableRiskInPercentOfCapital(new BigDecimal(2)),
                 new PricePerUnit(new BigDecimal(1000000)),
                 new StopLossPricePerUnit(new BigDecimal(999999)));
@@ -100,7 +101,7 @@ public class PositionTest {
 
     @Test
     public void totalTolerableRiskPerTrade() throws Exception {
-        Position position = new Long(new Capital(new BigDecimal(10000)),
+        Position position = new io.github.androidfred.positioncalculator.Long(new Capital(new BigDecimal(10000)),
                 new TolerableRiskInPercentOfCapital(new BigDecimal(2)),
                 new PricePerUnit(new BigDecimal(25)),
                 new StopLossPricePerUnit(new BigDecimal(24)));
@@ -111,7 +112,7 @@ public class PositionTest {
 
     @Test
     public void stopLossPerUnitLoss() throws Exception {
-        Position position = new Long(new Capital(new BigDecimal(10000)),
+        Position position = new io.github.androidfred.positioncalculator.Long(new Capital(new BigDecimal(10000)),
                 new TolerableRiskInPercentOfCapital(new BigDecimal(2)),
                 new PricePerUnit(new BigDecimal(25)),
                 new StopLossPricePerUnit(new BigDecimal(24)));
@@ -120,7 +121,7 @@ public class PositionTest {
 
     @Test
     public void stopLossTotalLoss() throws Exception {
-        Position position = new Long(new Capital(new BigDecimal(10000)),
+        Position position = new io.github.androidfred.positioncalculator.Long(new Capital(new BigDecimal(10000)),
                 new TolerableRiskInPercentOfCapital(new BigDecimal(2)),
                 new PricePerUnit(new BigDecimal(25)),
                 new StopLossPricePerUnit(new BigDecimal(24)));
@@ -129,7 +130,7 @@ public class PositionTest {
 
     @Test
     public void total() throws Exception {
-        Position position = new Long(new Capital(new BigDecimal(10000)),
+        Position position = new io.github.androidfred.positioncalculator.Long(new Capital(new BigDecimal(10000)),
                 new TolerableRiskInPercentOfCapital(new BigDecimal(2)),
                 new PricePerUnit(new BigDecimal(25)),
                 new StopLossPricePerUnit(new BigDecimal(24)));

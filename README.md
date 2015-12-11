@@ -1,14 +1,12 @@
-Despite this Java app no longer being deployed anywhere, I decided to refactor it as an exercise in Object Orientation
-and keep it here on GitHub as an example of how my software development skills have evolved over time.
+Despite this Java app no longer being deployed anywhere, I decided to refactor it as an exercise in Object Orientation.
 
-This app was originally deployed through a Java web GUI. (https://github.com/androidfred/positionweb)
-Both this app and the Java web GUI were replaced by a version written completely in Angular. (https://github.com/androidfred/angulator)
+This app was originally deployed through a Java web GUI. (https://github.com/androidfred/positionweb) That app was replaced by a version written completely in Angular. (https://github.com/androidfred/angulator)
 
 ```xml
 <dependency>
     <groupId>io.github.androidfred</groupId>
     <artifactId>positioncalculator</artifactId>
-    <version>1.0</version>
+    <version>2.0</version>
     <type>jar</type>
 </dependency>
 ```

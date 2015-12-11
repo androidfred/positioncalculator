@@ -1,4 +1,4 @@
-Despite this Java app no longer being deployed anywhere, I decided to refactor it as an exercise in Object Orientation.
+Despite this Java app no longer being deployed anywhere, I decided to refactor it as an exercise in fundamentalist Object Orientation.
 
 This app was originally deployed through a Java web GUI. (https://github.com/androidfred/positionweb) That app was replaced by a version written completely in Angular. (https://github.com/androidfred/angulator)
 

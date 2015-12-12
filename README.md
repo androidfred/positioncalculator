@@ -1,6 +1,6 @@
-Despite this Java app no longer being deployed anywhere, I decided to refactor it as an exercise in fundamentalist Object Orientation.
+Angular replacement is running on http://positioncalculator.bedobi.com (Source code: https://github.com/androidfred/angulator)
 
-Angular replacement for this app is running on http://positioncalculator.bedobi.com (Source code: https://github.com/androidfred/angulator)
+Despite this Java version no longer being deployed anywhere, I decided to refactor it as an exercise in fundamentalist Object Orientation.
 
 ```xml
 <dependency>

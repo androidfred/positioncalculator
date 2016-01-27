@@ -2,20 +2,20 @@ package io.github.androidfred.positioncalculator;
 
 import java.math.BigDecimal;
 
-public class StopLossPricePerUnit {
+public class StopLossPricePerUnit<T extends BigDecimal> {
 
-    private BigDecimal verified;
+    private T verified;
 
     public StopLossPricePerUnit() {
     }
 
-    public StopLossPricePerUnit(final BigDecimal verify) {
-        this.verified = new PositiveSignum(
+    public StopLossPricePerUnit(final T verify) {
+        this.verified = new PositiveSignum<T>(
                 new NotNull<>(verify).provide()
         ).provide();
     }
 
-    public final BigDecimal provide() {
+    public final T provide() {
         return this.verified;
     }
 }

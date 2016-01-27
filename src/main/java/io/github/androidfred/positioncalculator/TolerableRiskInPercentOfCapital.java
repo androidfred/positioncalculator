@@ -2,23 +2,23 @@ package io.github.androidfred.positioncalculator;
 
 import java.math.BigDecimal;
 
-public class TolerableRiskInPercentOfCapital {
+public class TolerableRiskInPercentOfCapital<T extends BigDecimal> {
 
-    private BigDecimal verified;
+    private T verified;
 
     public TolerableRiskInPercentOfCapital() {
     }
 
-    public TolerableRiskInPercentOfCapital(final BigDecimal verify) {
-        this.verified = new Max(
-                new PositiveSignum(
+    public TolerableRiskInPercentOfCapital(final T verify) {
+        this.verified = new Max<T>(
+                new PositiveSignum<T>(
                         new NotNull<>(verify).provide()
                 ).provide(),
                 new BigDecimal(100)
         ).provide();
     }
 
-    public final BigDecimal provide() {
+    public final T provide() {
         return this.verified;
     }
 }

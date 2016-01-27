@@ -2,20 +2,20 @@ package io.github.androidfred.positioncalculator;
 
 import java.math.BigDecimal;
 
-public class Capital {
+public class Capital<T extends BigDecimal> {
 
-    private BigDecimal verified;
+    private T verified;
 
     private Capital() {
     }
 
-    public Capital(final BigDecimal verify) {
-        this.verified = new PositiveSignum(
+    public Capital(final T verify) {
+        this.verified = new PositiveSignum<>(
                 new NotNull<>(verify).provide()
         ).provide();
     }
 
-    public final BigDecimal provide() {
+    public final T provide() {
         return this.verified;
     }
 }
